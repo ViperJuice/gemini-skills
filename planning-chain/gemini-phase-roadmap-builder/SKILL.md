@@ -108,7 +108,7 @@ Use this shape so `gemini-plan-phase` can parse it:
 
 In Default mode, write the roadmap with the active session's file-editing tool, then report the artifact path and the next suggested `gemini-plan-phase` invocation. Do not commit unless the user asked for a commit.
 
-If writing self-improvement state, follow `runtime-state.md` and use Gemini paths only:
+If writing self-improvement state, follow `gemini-config/shared/runtime-state.md` and use Gemini paths only:
 
 - Reflection: `~/.gemini/skills/gemini-phase-roadmap-builder/reflections/<repo_hash>/<branch_slug>/<run_id>.md`
 - Handoff: `~/.gemini/skills/gemini-phase-roadmap-builder/handoffs/<repo_hash>/<branch_slug>/<run_id>.md`

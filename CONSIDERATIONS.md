@@ -35,6 +35,10 @@ Default install target: `$HOME/.gemini/skills`.
 
 These framework-specific skills are intentionally not installed into `~/.agents/skills`. That directory should be reserved for future skills that are genuinely platform-neutral.
 
+## Permission settings
+
+Dotfiles manages Gemini CLI runtime access in `bootstrap.sh` by merging `tools.sandboxAllowedPaths` into `$HOME/.gemini/settings.json` for `$HOME/.gemini/skills` and the dotfiles `gemini-config/skills` symlink target. Gemini CLI does not currently provide a narrow path-specific edit auto-approval setting, so do not enable global `auto_edit` or YOLO mode just to reduce prompts for runtime artifacts.
+
 ## Style
 
 Keep instructions directive-first. Avoid long narrative justification, war stories, or benchmark claims. If behavior differs between frameworks, do not hide that behind a generic skill; make an explicit framework-specific port.

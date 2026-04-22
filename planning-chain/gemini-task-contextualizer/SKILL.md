@@ -86,7 +86,7 @@ For copy-ready variants, read `references/subagent-briefs.md`.
 
 ## Runtime State
 
-This skill normally writes no reflection or handoff. If a future workflow adds self-improvement state, follow `runtime-state.md` and use Gemini paths only:
+This skill normally writes no reflection or handoff. If a future workflow adds self-improvement state, follow `gemini-config/shared/runtime-state.md` and use Gemini paths only:
 
 - Reflection: `~/.gemini/skills/gemini-task-contextualizer/reflections/<repo_hash>/<branch_slug>/<run_id>.md`
 - Handoff: `~/.gemini/skills/gemini-task-contextualizer/handoffs/<repo_hash>/<branch_slug>/<run_id>.md`
